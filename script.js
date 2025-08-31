@@ -20,3 +20,11 @@ joinForm.addEventListener('submit', (e) => {
   formStatus.textContent = "⚔️ Application Sent! We’ll contact you soon.";
   joinForm.reset();
 });
+
+// Mobile menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.navbar nav');
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
